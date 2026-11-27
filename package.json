@@ -1,0 +1,45 @@
+{
+  "name": "mcp-lock",
+  "version": "0.1.0",
+  "description": "A lockfile for MCP servers: pin every tool, prompt and resource, flag hidden instructions, fail CI when a server changes.",
+  "main": "src/snapshot.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node --test test/"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "claude",
+    "claude-code",
+    "ai-agents",
+    "security",
+    "lockfile",
+    "prompt-injection"
+  ],
+  "author": "Atta Ur Rehman (https://www.attarehman.com)",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2"
+  },
+  "bin": {
+    "mcp-lock": "src/cli.js"
+  },
+  "files": [
+    "src"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devoun-official/mcp-lock.git"
+  },
+  "homepage": "https://github.com/devoun-official/mcp-lock#readme",
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "zod": "^4.6.7"
+  }
+}
